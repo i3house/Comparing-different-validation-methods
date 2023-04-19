@@ -26,13 +26,14 @@ to find the best hyper-parameters (Lambda, Max Iteration, and Tolerance) and com
 Amongst the 3 methods it probably makes sense to choose Method 1, considering it takes the least amount of time, gives better MSE on the test set, and shrinks 31 coefficients to zero.
 
 # Pros and Cons of each
-
+<pre>
                                 PROS                                                CONS
 ------------------------------------------------------------------------------------------------------------------------
 Train-Valid-Split             Simple                               May overfit if dataset is very small
-                     Fastest (if time is major factor)             May not provide reliable estimate of model performance
+                    Fastest (if time is major factor)              May not provide reliable estimate of model performance
 
 5-Fold CV           Suitable for most datasets (small to medium)   Requires more time/computation
                     More reliable estimate of model performance
 
 10-Fold CV          Suitable for large datasets                    Requires even more time/computation than 5-Fold.
+</pre>
